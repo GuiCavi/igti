@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalho Prático 01</title>
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row-color">
+      <label for="rValue">(R) Red:</label>
+      <input type="range" name="rValue" value="0" min="0" max="255">
+      <div class="preview-single-color"></div>
+    </div>
+
+    <div class="row-color">
+      <label for="gValue">(G) Green:</label>
+      <input type="range" name="gValue" value="0" min="0" max="255">
+      <div class="preview-single-color"></div>
+    </div>
+
+    <div class="row-color">
+      <label for="bValue">(B) Blue:</label>
+      <input type="range" name="bValue" value="0" min="0" max="255">
+      <div class="preview-single-color"></div>
+    </div>
+
+    <div class="preview-final-color"></div>
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
