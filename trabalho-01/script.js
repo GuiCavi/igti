@@ -21,7 +21,7 @@ function init() {
     });
   });
 
-  render();
+  // render();
 }
 
 const changeValue = (value, name) => {
