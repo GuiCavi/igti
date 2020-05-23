@@ -14,7 +14,9 @@ let users = [];
 let resultsHTML = "";
 
 function filterByName(input) {
-  return users.filter((user) => user.name.toLowerCase().includes(input));
+  return users.filter((user) =>
+    user.name.toLowerCase().includes(input.toLowerCase())
+  );
 }
 
 async function start() {
