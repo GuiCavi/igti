@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalho 02</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="center">Pesquisa de usuários</h1>
+
+      <div>
+        <div class="row">
+          <div class="input-field col s12 m9 no-mt">
+            <input id="searchInput" type="text" class="validate" />
+            <label for="searchInput">Buscar</label>
+          </div>
+
+          <div class="col s12 m3">
+            <button id="searchButton" class="btn">Buscar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s6">
+          <div class="card">
+            <div class="card-content">
+              <h3 class="flow-text">
+                <span id="numberOfUsers">Nenhum</span> usuário(s) encontrado(s)
+              </h3>
+
+              <div id="results"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col s6">
+          <div class="card">
+            <div class="card-content">
+              <h3 class="flow-text">Estatísticas</h3>
+
+              <div>
+                Sexo masculino: <span class="bold" id="totalMasc">0</span>
+              </div>
+              <div>
+                Sexo feminino: <span class="bold" id="totalFem">0</span>
+              </div>
+              <div>
+                Soma das idades: <span class="bold" id="sumAge">0</span>
+              </div>
+              <div>
+                Média das idades: <span class="bold" id="avgAge">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="./helpers.js"></script>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
